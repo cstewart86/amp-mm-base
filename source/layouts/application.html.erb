@@ -1,0 +1,23 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= current_page.data.title %></title>
+    <meta name="description" content="<%= current_page.data.description %>">
+    <link rel="canonical" href="<%= current_page.data.canonical %>">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <%= inline_amp_stylesheet('application') %>
+    <%= partial 'partials/amp-boilerplate.html' %>
+    <%= partial 'partials/amp-components' %>
+  </head>
+  <body>
+    <%= yield %>
+    <% if data.site.amp['install-serviceworker'] %>
+      <amp-install-serviceworker src="/sw.js"
+        data-iframe-src="https://amp.dev/sw.html"
+        layout="nodisplay">
+      </amp-install-serviceworker>
+    <% end %>
+  </body>
+</html>

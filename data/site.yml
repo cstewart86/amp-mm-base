@@ -1,0 +1,4 @@
+amp:
+  install-serviceworker: true
+  accordion: false
+  social-share: false
