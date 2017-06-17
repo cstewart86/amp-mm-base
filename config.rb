@@ -28,9 +28,14 @@ activate :directory_indexes
 helpers ImageHelpers
 helpers StylesheetHelpers
 
+config[:canonical_root] = 'https://beardless.io'
+
+configure :development do
+  config[:host] = "https://amp.dev"
+end
+
 configure :build do
-  activate :minify_css
+  config[:host] = "https://beardless.io"
   activate :minify_html
   activate :asset_hash, ignore: ['sw.js', 'favicon.ico']
-  activate :gzip
 end

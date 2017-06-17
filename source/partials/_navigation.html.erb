@@ -1,0 +1,77 @@
+<!-- Start Navbar -->
+<header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
+  <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2">☰</div>
+  <amp-img src="../img/thescenic/header-logo.png" width="110" height="33" layout="fixed" class="my0 mx-auto " alt="The Blog"></amp-img>
+</header>
+
+<!-- Start Sidebar -->
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+  </div>
+
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 caps h5">
+      <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+
+        <!-- Start Dropdown-inline -->
+        <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+          <section>
+            <header>Fashion</header>
+            <ul class="ampstart-dropdown-items list-reset m0 p0">
+              <li class="ampstart-dropdown-item">
+                <a href="#" class="text-decoration-none">Styling Tips</a>
+              </li>
+              <li class="ampstart-dropdown-item">
+                <a href="#" class="text-decoration-none">Designers</a>
+              </li>
+            </ul>
+          </section>
+        </amp-accordion>
+
+        <!-- End Dropdown-inline -->
+      </li>
+      <li class="ampstart-nav-item">
+        <a href="#">Travel</a>
+      </li>
+      <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+
+        <!-- Start Dropdown-inline -->
+        <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+          <section>
+            <header>Food</header>
+            <ul class="ampstart-dropdown-items list-reset m0 p0">
+              <li class="ampstart-dropdown-item">
+                <a href="#" class="text-decoration-none">Recipes</a>
+              </li>
+              <li class="ampstart-dropdown-item">
+                <a href="#" class="text-decoration-none">Hosting Tips</a>
+              </li>
+            </ul>
+          </section>
+        </amp-accordion>
+
+        <!-- End Dropdown-inline -->
+      </li>
+      <li class="ampstart-nav-item">
+        <a href="#">Beauty</a>
+      </li>
+      <li class="ampstart-nav-item">
+        <a href="#">Shop</a>
+      </li>
+    </ul>
+  </nav>
+
+  <%= partial 'partials/social_icons' %>
+
+  <ul class="ampstart-sidebar-faq list-reset m0">
+    <li class="ampstart-faq-item">
+      <a href="#" class="text-decoration-none">About</a>
+    </li>
+    <li class="ampstart-faq-item">
+      <a href="#" class="text-decoration-none">Contact</a>
+    </li>
+  </ul>
+</amp-sidebar>
+<!-- End Sidebar -->
+<!-- End Navbar -->

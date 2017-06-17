@@ -1,8 +1,13 @@
 ---
-title: Middleman AMP Base
-description: A good stating point for a Middleman AMP project.
-canonical: 'https://www.example.com'
+description: Hello World
+amp:
+  accordion: true
+  analytics: false
+  carousel: false
+  serviceworker: true
+  sidebar: true
+  social: false
+  instagram: false
 ---
-<a href="https://beardless.io">
-  <%= inline_svg('assets/images/beardless-logo.svg', class: 'svg beardless-logo') %>
-</a>
+<% content_for :title, "Kockknivar Online - Stort proffsutbud av knivar och knivset" %>
+<% content_for :canonical, "#{config.canonical_root}" %>
